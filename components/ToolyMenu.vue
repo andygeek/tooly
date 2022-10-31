@@ -5,7 +5,7 @@
       :default-expand-all="true">
         <template #default="{ node, data }">
           <span :class="{'node-title': !!data.isTitle}" class="custom-tree-node">
-            <a class="menu-text__container" :href="`#${data.label.toLowerCase()}`">{{ node.label }}</a>
+            <a class="menu-text__container" :href="`documentation/#${data.label.toLowerCase()}`">{{ node.label }}</a>
           </span>
         </template>
       </el-tree>
