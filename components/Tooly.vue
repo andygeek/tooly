@@ -6,7 +6,7 @@
         <span class="tooly-ooly__text">ooly</span>
       </span>
       <span class="tooly-subtitle__text">
-        Tooly is a multilanguage library to handle lists in Dart or arrays in Ruby in an easy and practical way.
+        Tooly is a library to handle lists in Dart in an easy and practical way.
       </span>
     </div>
     <div>
@@ -16,8 +16,6 @@
         </el-button>
       </nuxt-link>
       <el-button type="primary" @click="redirect" plain>Dart</el-button>
-      <el-button type="danger" plain disabled>Ruby (soon...)</el-button>
-      <el-button type="info" plain disabled>Go (soon...)</el-button>
     </div>
   </div>
 </template>
@@ -60,9 +58,6 @@ export default class Tooly extends Vue {
 .tooly-t__text {
   color: #0175c2;
   cursor: pointer;
-}
-.tooly-t__text:hover {
-  color: red;
 }
 .button-documentation__container {
   margin-right: 10px;

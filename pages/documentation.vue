@@ -23,7 +23,7 @@ import ToolyMenu from '~/components/ToolyMenu.vue';
 export default {
   components: { ToolyHeader, ToolyMenu },
   async asyncData ({ $content }) {
-    const page = await $content('hello').fetch()
+    const page = await $content('documentation').fetch()
     return {
       page
     }
