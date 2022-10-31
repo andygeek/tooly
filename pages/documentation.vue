@@ -8,7 +8,7 @@
         <el-aside width="300px">
           <tooly-menu></tooly-menu>
         </el-aside>
-        <el-main style="height:calc(100vh - 80px)">
+        <el-main style="height:calc(100vh - 80px)" class="documentation-main__container">
           <nuxt-content :document="page" />
         </el-main>
       </el-container>
@@ -34,5 +34,12 @@ export default {
 .documentation__container {
   height: 100vh;
   width: 100vw;
+}
+.documentation-main__container {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+.documentation-main__container h1 {
+  font-weight: 600;
 }
 </style>

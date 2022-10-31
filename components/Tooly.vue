@@ -15,7 +15,7 @@
             Documentation
         </el-button>
       </nuxt-link>
-      <el-button type="primary" plain>Dart</el-button>
+      <el-button type="primary" @click="redirect" plain>Dart</el-button>
       <el-button type="danger" plain disabled>Ruby (soon...)</el-button>
       <el-button type="info" plain disabled>Go (soon...)</el-button>
     </div>
@@ -23,11 +23,14 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { Component, Vue } from 'vue-property-decorator'
 
-export default Vue.extend({
-  name: 'Tooly',
-})
+@Component
+export default class Tooly extends Vue {
+  redirect() {
+    window.location.href = "https://pub.dev/packages/tooly"
+  }
+}
 </script>
 <style scoped>
 .tooly__container {
