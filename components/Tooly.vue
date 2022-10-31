@@ -1,15 +1,19 @@
 <template>
   <div class="tooly__container">
     <div class="tooly-title__container">
-      <span class="tooly-title__text">Tooly</span>
+      <span class="tooly-title__text">
+        <span class="tooly-t__text">T</span>
+        <span class="tooly-ooly__text">ooly</span>
+      </span>
       <span class="tooly-subtitle__text">
-        Tooly is a package based in Lodash for Dart that contain utilities for working with lists, maps, sets and objects.
+        Tooly is a multilanguage library to handle lists in Dart or arrays in Ruby in an easy and practical way.
       </span>
     </div>
     <div>
-      <el-button>Documentation</el-button>
-      <el-button>Dart</el-button>
-      <el-button>Ruby</el-button>
+      <el-button type="primary">Documentation</el-button>
+      <el-button type="primary" plain>Dart</el-button>
+      <el-button type="danger" plain>Ruby</el-button>
+      <el-button type="info" plain disabled>Go (soon..)</el-button>
     </div>
   </div>
 </template>
@@ -35,11 +39,22 @@ export default Vue.extend({
   align-items: center;
 }
 .tooly-title__text {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
   font-size: 40px;
   font-weight: 500;
 }
 .tooly-subtitle__text {
   margin-block: 25px;
+  font-size: 20px;
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.tooly-t__text {
+  color: #0175c2;
+  cursor: pointer;
+}
+.tooly-t__text:hover {
+  color: red;
 }
 </style>
