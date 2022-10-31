@@ -1,4 +1,4 @@
-# tooly-website
+# tooly
 
 ## Build Setup
 

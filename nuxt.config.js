@@ -1,11 +1,11 @@
 export default {
   target: 'static',
   router: {
-    base: '/tooly-website/'
+    base: '/tooly/'
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'tooly-website',
+    title: 'tooly',
     htmlAttrs: {
       lang: 'en',
     },
