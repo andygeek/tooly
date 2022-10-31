@@ -1,14 +1,14 @@
 <template>
   <div class="documentation__container">
     <el-container>
-      <el-header>
-        sdsdsds
+      <el-header height="80px">
+        <tooly-header></tooly-header>
       </el-header>
       <el-container>
         <el-aside width="300px">
-          <a href="#fill">aaa</a>
+          <tooly-menu></tooly-menu>
         </el-aside>
-        <el-main>
+        <el-main style="height:calc(100vh - 80px)">
           <nuxt-content :document="page" />
         </el-main>
       </el-container>
@@ -17,7 +17,11 @@
 </template>
 
 <script>
+import ToolyHeader from '~/components/ToolyHeader.vue';
+import ToolyMenu from '~/components/ToolyMenu.vue';
+
 export default {
+  components: { ToolyHeader, ToolyMenu },
   async asyncData ({ $content }) {
     const page = await $content('hello').fetch()
     return {
