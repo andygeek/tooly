@@ -10,10 +10,14 @@
       </span>
     </div>
     <div>
-      <el-button type="primary">Documentation</el-button>
+      <nuxt-link to="/documentation" class="button-documentation__container">
+        <el-button type="primary">
+            Documentation
+        </el-button>
+      </nuxt-link>
       <el-button type="primary" plain>Dart</el-button>
-      <el-button type="danger" plain>Ruby</el-button>
-      <el-button type="info" plain disabled>Go (soon..)</el-button>
+      <el-button type="danger" plain disabled>Ruby (soon...)</el-button>
+      <el-button type="info" plain disabled>Go (soon...)</el-button>
     </div>
   </div>
 </template>
@@ -56,5 +60,8 @@ export default Vue.extend({
 }
 .tooly-t__text:hover {
   color: red;
+}
+.button-documentation__container {
+  margin-right: 10px;
 }
 </style>
