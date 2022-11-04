@@ -39,9 +39,9 @@ export default class Tooly extends Vue {
 }
 .tooly-title__container {
   display: flex;
-  width: 600px;
   flex-direction: column;
   align-items: center;
+  margin-inline: 15px
 }
 .tooly-title__text {
   font-family: 'Roboto Slab', serif;

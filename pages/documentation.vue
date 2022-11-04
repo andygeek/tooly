@@ -5,7 +5,7 @@
         <tooly-header></tooly-header>
       </el-header>
       <el-container>
-        <el-aside width="300px">
+        <el-aside width="250px" class="documentation-aside__container">
           <tooly-menu></tooly-menu>
         </el-aside>
         <el-main style="height:calc(100vh - 80px)" class="documentation-main__container">
@@ -41,5 +41,10 @@ export default {
 }
 .documentation-main__container h1 {
   font-weight: 600;
+}
+@media (max-width: 600px) {
+  .documentation-aside__container {
+    display: none;
+  }
 }
 </style>

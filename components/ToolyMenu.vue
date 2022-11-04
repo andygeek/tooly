@@ -2,10 +2,11 @@
   <div class="tooly-menu__container">
     <el-tree
       :data="data"
-      :default-expand-all="true">
+      :default-expand-all="true"
+      @node-click="handleNodeClick">
         <template #default="{ node, data }">
           <span :class="{'node-title': !!data.isTitle}" class="custom-tree-node">
-            <a class="menu-text__container" :href="`documentation/#${data.label.toLowerCase()}`">{{ node.label }}</a>
+            <a class="menu-text__container" :ref="data.label" :href="`documentation/#${data.label.toLowerCase()}`">{{ node.label }}</a>
           </span>
         </template>
       </el-tree>
@@ -66,6 +67,12 @@ export default class ToolyMenu extends Vue {
       ],
     }
   ]
+
+  async handleNodeClick(value: any) {
+    const name = value.label
+    const htmlElement = this.$refs[name] as HTMLLinkElement
+    htmlElement.click()
+  }
 }
 </script>
 <style scoped>
