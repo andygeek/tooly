@@ -3,6 +3,31 @@ title: Documentation
 description: '...'
 ---
 
+# Installation
+
+Run this command:
+
+With Dart:
+
+```
+dart pub add tooly
+```
+With Flutter:
+
+```
+flutter pub add tooly
+```
+This will add a line like this to your package's pubspec.yaml (and run an implicit dart pub get):
+
+```
+dependencies:
+tooly: ^0.7.2
+```
+Alternatively, your editor might support `dart pub get` or `flutter pub get`. Check the docs for your editor to learn more.
+
+
+
+
 # chunk
 
 Create an list of elements split into groups the length of initial list size.

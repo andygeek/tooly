@@ -25,6 +25,10 @@ export default class ToolyMenu extends Vue {
 
   data: Tree[] = [
     {
+      label: 'Installation',
+      isTitle: true
+    },
+    {
       label: 'List',
       isTitle: true,
       children: [
