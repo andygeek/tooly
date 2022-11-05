@@ -1,8 +1,9 @@
 <template>
   <div class="documentation__container">
     <el-container>
-      <el-header height="80px">
+      <el-header height="80px" class="documentation-header__container">
         <tooly-header></tooly-header>
+        <tooly-buttons></tooly-buttons>
       </el-header>
       <el-container>
         <el-aside width="250px" class="documentation-aside__container">
@@ -41,6 +42,10 @@ export default {
 }
 .documentation-main__container h1 {
   font-weight: 600;
+}
+.documentation-header__container {
+  display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 600px) {
   .documentation-aside__container {

@@ -1,9 +1,9 @@
 <template>
   <div class="tooly-header__container">
-    <span class="tooly-title__text">
+    <NuxtLink to="/" class="tooly-title__text">
       <span class="tooly-t__text">T</span>
       <span class="tooly-ooly__text">ooly</span>
-    </span>
+    </NuxtLink>
   </div>
 </template>
 <script lang="ts">
@@ -22,6 +22,8 @@ export default Vue.extend({
   display: flex;
   font-size: 40px;
   font-weight: 500;
+  text-decoration: none;
+  color: black;
 }
 .tooly-subtitle__text {
   margin-block: 25px;
@@ -32,8 +34,5 @@ export default Vue.extend({
 .tooly-t__text {
   color: #0175c2;
   cursor: pointer;
-}
-.tooly-t__text:hover {
-  color: red;
 }
 </style>
