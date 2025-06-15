@@ -94,3 +94,6 @@ sw.*
 
 # Vim swap files
 *.swp
+assets/fonts/*
+assets/css/main.css
+content/documentation.md

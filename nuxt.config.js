@@ -1,7 +1,7 @@
 export default {
   target: 'static',
   router: {
-    base: '/tooly/'
+    base: '/tooly/',
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -15,7 +15,9 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'shortcut icon', type: 'image/x-icon', href: './favicon.ico' }],
+    link: [
+      { rel: 'shortcut icon', type: 'image/x-icon', href: './favicon.ico' },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -23,7 +25,7 @@ export default {
     'element-ui/lib/theme-chalk/index.css',
     '@/assets/css/main.css',
     '@/assets/fonts/roboto_slab.css',
-    '@/assets/fonts/source_sans_pro.css'
+    '@/assets/fonts/source_sans_pro.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -36,6 +38,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@nuxtjs/tailwindcss',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
